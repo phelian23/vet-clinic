@@ -12,3 +12,23 @@ CREATE TABLE animals (
 /* Update database */
 
 ALTER TABLE animals ADD COLUMN species TEXT;
+
+
+CREATE TABLE owners (
+   id BIGSERIAL PRIMARY KEY NOT NULL,
+   full_name TEXT NOT NULL,
+   age INT NOT NULL );
+
+CREATE TABLE species (
+   id BIGSERIAL PRIMARY KEY NOT NULL,
+   name TEXT NOT NULL );
+
+ALTER TABLE animals DROP COLUMN species;
+
+ALTER TABLE animals ADD COLUMN species_id INT;
+
+ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species(id);
+
+ALTER TABLE animals ADD COLUMN owners_id INT;
+
+ALTER TABLE animals ADD FOREIGN KEY (owners_id) REFERENCES owners(id);
