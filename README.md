@@ -16,6 +16,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 👤 **Phelian23**
 
 - GitHub: [@phelian23](https://github.com/phelian23)
+- - LinkedIn: [LinkedIn](https://www.linkedin.com/in/oluwafemi-awoyemi/)
 
 
 👤 **Timo Wester**
