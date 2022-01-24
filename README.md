@@ -17,6 +17,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - GitHub: [@phelian23](https://github.com/phelian23)
 
+
 👤 **Timo Wester**
 
 - GitHub: [@githubhandle](https://github.com/Timowest12)
