@@ -138,3 +138,7 @@ JOIN animals ON animals.id = visits.animals_id
 JOIN species ON species.id = animals.species_id
 WHERE vets.name = 'Maisy Smith'
 GROUP BY species.name;
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+CREATE INDEX animals_id_index ON visits(animals_id);
+SELECT COUNT(*) FROM visits where animal_id = 4;
