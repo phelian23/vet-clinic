@@ -16,7 +16,15 @@ This repository includes files with plain SQL that can be used to recreate a dat
 👤 **Phelian23**
 
 - GitHub: [@phelian23](https://github.com/phelian23)
+- - LinkedIn: [LinkedIn](https://www.linkedin.com/in/oluwafemi-awoyemi/)
 
+
+👤 **Timo Wester**
+
+- GitHub: [@githubhandle](https://github.com/Timowest12)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/timo-wester-6a0282a7/)
+
+![Timo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Timowest12&count_private=true&theme=dark&show_icons=true)
 
 ## 🤝 Contributing
 
