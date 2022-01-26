@@ -5,6 +5,8 @@ CREATE TABLE patients (
     date_of_birth DATE
 );
 
+CREATE DATABASE clinics
+
 CREATE TABLE treaments (
     id SERIAL PRIMARY KEY,
     type VARCHAR(256),
