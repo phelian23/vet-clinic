@@ -47,7 +47,7 @@ CREATE TABLE invoice_items (
 );
 
 
-
+--Create indexes so as to retrieve data more quickly from the database
 CREATE INDEX medical_histories_treaments_medical_history_id_index ON medical_histories_treaments(medical_history_id);
 CREATE INDEX medical_histories_patient_id_index ON medical_histories(patient_id);
 CREATE INDEX invoices_medical_history_id_index ON invoices (medical_history_id);
