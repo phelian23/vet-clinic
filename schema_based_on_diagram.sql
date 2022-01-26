@@ -1,18 +1,16 @@
-
+--Create table patients
 CREATE TABLE patients (
     id SERIAL PRIMARY KEY,
     name VARCHAR(256),
     date_of_birth DATE
 );
-
-CREATE DATABASE clinics
-
+--Create table treatments
 CREATE TABLE treaments (
     id SERIAL PRIMARY KEY,
     type VARCHAR(256),
     name VARCHAR(256)
 );
-
+--Create table medical histories
 CREATE TABLE medical_histories (
     id SERIAL PRIMARY KEY,
     admitted_at TIMESTAMP,
@@ -20,14 +18,14 @@ CREATE TABLE medical_histories (
    status VARCHAR(256),
    CONSTRAINT fk_patient FOREIGN KEY(patient_id) REFERENCES patients(id)  
 );
-
+--Create table medical_histories_treaments
 CREATE TABLE medical_histories_treaments (
     medical_history_id int,
     treament_id int,
     CONSTRAINT fk_medical_history FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id),
     CONSTRAINT fk_treament FOREIGN KEY(treament_id) REFERENCES treaments(id)
 );
-
+--create table invoices
 CREATE TABLE invoices (
     id SERIAL PRIMARY KEY,
     total_amount DECIMAL,
@@ -36,7 +34,7 @@ CREATE TABLE invoices (
     medical_history_id INT,
     CONSTRAINT fk_medical_history FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id)
 );
-
+-- create table invoice-items
 CREATE TABLE invoice_items (
     id SERIAL PRIMARY KEY,
     unit_price DECIMAL,
